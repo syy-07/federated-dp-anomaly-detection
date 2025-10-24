@@ -1,0 +1,20 @@
+seed: 42
+clients: 5
+rounds: 20
+participation_rate: 0.8
+local_epochs: 2
+batch_size: 64
+lr: 1e-3
+model: mlp
+input_dim: 32
+hidden_dims: [64, 32]
+latent_dim: 12
+dp:
+  enabled: false
+data:
+  total_samples: 50000
+  anomaly_rate: 0.03
+  iid: false
+metrics:
+  eval_every: 2
+save_every: 5

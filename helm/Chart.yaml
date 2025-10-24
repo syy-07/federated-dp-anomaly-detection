@@ -1,0 +1,6 @@
+apiVersion: v2
+name: dp-fed-anomaly
+description: Demo service to serve a DP-FL anomaly model
+type: application
+version: 0.1.0
+appVersion: "0.1.0"

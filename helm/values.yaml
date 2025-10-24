@@ -1,0 +1,6 @@
+image:
+  repository: dp-fed-anomaly
+  tag: latest
+service:
+  type: ClusterIP
+  port: 8080

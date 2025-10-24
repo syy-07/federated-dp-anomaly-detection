@@ -1,0 +1,11 @@
+seed: 42
+epochs: 10
+batch_size: 128
+lr: 1e-3
+model: mlp
+input_dim: 32
+hidden_dims: [64, 32]
+latent_dim: 12
+data:
+  total_samples: 50000
+  anomaly_rate: 0.03

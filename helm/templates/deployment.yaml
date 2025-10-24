@@ -1,0 +1,17 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: dp-fed-anomaly
+spec:
+  replicas: 1
+  selector:
+    matchLabels: { app: dp-fed-anomaly }
+  template:
+    metadata:
+      labels: { app: dp-fed-anomaly }
+    spec:
+      containers:
+        - name: api
+          image: dp-fed-anomaly:latest
+          ports: [{ containerPort: 8080 }]
+          args: ["python", "src/service.py"]
